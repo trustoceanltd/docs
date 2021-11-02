@@ -2,5 +2,17 @@ site_name: 文档中心
 theme:
   name: material
   custom_dir: overrides
+  features:
+    - navigation.tabs
 extra_css:
   - stylesheets/extra.css
+nav:
+  - Home: index.md
+  - Encryption365:
+      - 介绍: encryption365/产品介绍.md
+      - 请求&响应: encryption365/请求和响应.md
+      - 错误请求: encryption365/错误处理.md
+      - 接口认证: encryption365/认证说明.md
+      - 注册设备: encryption365/注册设备.md
+      - 产品列表: encryption365/产品列表.md
+      - 创建证书: encryption365/创建证书.md
