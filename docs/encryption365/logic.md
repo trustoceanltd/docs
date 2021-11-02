@@ -1,11 +1,16 @@
+相信明智的你会在开始编码之前查看一下我们的接口调用逻辑。这能够帮助并不熟悉TLS\SSL产品的你更好的完成证书申请，少走弯路，事半功倍。
+
+## 客户端初始化
+这个过程是我们推荐的初始化流程，在此过程中获取并保存后期调用API所用到的认证参数和产品信息。
 ``` mermaid
-sequenceDiagram
-  Alice->>John: Hello John, how are you?
-  loop Healthcheck
-      John->>John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts!
-  John-->>Alice: Great!
-  John->>Bob: How about you?
-  Bob-->>John: Jolly good!
+graph TB
+  A[开始] --> B{注册设备};
+  B -->|获取到 client_id,access_token| C[保存认证参数];
+  B -->|失败| B;
+  C --> D[获取产品列表];
+  D --> |成功|E[保存产品数据];
+  E --> F[完成]
 ```
+
+
+
