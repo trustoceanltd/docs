@@ -1,5 +1,9 @@
 body,p,div,span,a,table,tb{
-    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    line-height: 1.5;
+    font-size: 14.5px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight: normal;
+    color: #3c4257;
 }
 .md-header{
     background-color: #f7fafc;
@@ -26,4 +30,7 @@ html .md-footer-meta.md-typeset a, html .md-footer-meta.md-typeset a:hover {
     overflow: auto;
     width: 100%;
     border-bottom: 1px solid #e3e8ee;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #000 !important;
 }
