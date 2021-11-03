@@ -1,8 +1,10 @@
-在开始和API进行交互之前，请先阅读此页面的请求说明。以便于API服务器可以正确理解您的参数和行为。
+此章节主要介绍 Encryption365 API 接口的交互规范。
+
 ### 请求方法
-所有的接口均采用 HTTP POST 方法访问
+所有的接口都必须采用 HTTP POST 方法进行访问。
+
 ### 参数格式
-将所有的请求参数构建为JSON对象，POST 到对应的API接口即可。下面是一个设备注册请求的Body参数举例：
+请将所有的请求参数构建为JSON对象进行传递。下面是一个设备注册请求的举例 Request Body：
 ```json
 {
     "password":"your-password",
@@ -10,8 +12,17 @@
     "servername": "TestDocAPI"
 }
 ```
+
+### HTTP CODE
+无论执行成功或是失败，服务器都会返回 200 状态码。
+```js
+HTTP Status: 200
+```
+请记住，Encryption365 API 不会使用 HTTP 状态码来表示请求状态，倘若您接收到的响应状态码不是 200 ，
+那么很有可能是您的网络连接出现了问题。
+
 ### 响应格式
-请求发送成功时，HTTP CODE 始终为 200 。且所有请求的响应都以JSON格式进行返回。下面是一个设备注册请求的响应举例 Response Body：
+所有接口响应数据都以 JSON 格式进行返回，下面是一个设备注册请求的响应举例 Response Body：
 ```json
 {
     "result": "success",
