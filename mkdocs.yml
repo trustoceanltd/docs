@@ -1,5 +1,12 @@
 site_name: 文档中心
+repo_url: https://github.com/trustoceanltd/docs
+repo_name: TRUSTOCEAN/DOCS
+plugins:
+  - search
 theme:
+  language: zh
+  icon:
+    repo: fontawesome/brands/github-alt
   name: material
   custom_dir: overrides
   features:
