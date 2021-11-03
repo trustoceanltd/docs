@@ -14,6 +14,7 @@ theme:
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
+  - footnotes
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -28,10 +29,11 @@ nav:
       - 请求响应: encryption365/request.md
       - 错误请求: encryption365/error.md
       - 接口认证: encryption365/authentication.md
-      - 注册设备: encryption365/client/create.md
-      - 产品列表: encryption365/account/products.md
-      - 创建证书: encryption365/order/create.md
-      - 查询证书: encryption365/cert/details.md
-      - 修改验证: encryption365/cert/change_dcv.md
-      - 吊销证书: encryption365/cert/revoke.md
-      - 重启验证: encryption365/cert/challenge.md
+      - API 接口:
+        - 注册设备: encryption365/api/client/create.md
+        - 产品列表: encryption365/api/account/products.md
+        - 创建证书: encryption365/api/order/create.md
+        - 查询证书: encryption365/api/cert/details.md
+        - 修改验证: encryption365/api/cert/change_dcv.md
+        - 吊销证书: encryption365/api/cert/revoke.md
+        - 重启验证: encryption365/api/cert/challenge.md

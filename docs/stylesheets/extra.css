@@ -8,7 +8,11 @@
     --md-footer-bg-color--dark: rgb(255 255 255);
     --md-default-fg-color--light: rgb(0 0 0 / 79%);
     --md-footer-fg-color--lighter: hsl(0deg 0% 5%);
+    --md-typeset-a-color: #be2327;
     --md-footer-fg-color--light: hsl(0deg 0% 0% / 70%);
+}
+.md-typeset a:focus, .md-typeset a:hover {
+    color: #be2327 !important;
 }
 .md-nav__link:focus, .md-nav__link:hover,.md-nav__item .md-nav__link--active {
     color: #be2327 !important;
