@@ -5,6 +5,7 @@ plugins:
   - search
 theme:
   language: zh
+  logo: assets/logo.svg
   icon:
     repo: fontawesome/brands/github-alt
   name: material
